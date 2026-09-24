@@ -1,0 +1,19 @@
+[
+  {
+    "CustomerTypeId": 1,
+    "CustomterTypeName": "VIP",
+    "Customers": [
+      { "Id": "Cus123", "Name": "Obama", "Email": "obama@gmail.com", "Age": 67, "Image": "https://media.phunutoday.vn/files/upload_images/2016/05/24/nhung-mon-an-khien-tong-thong-obama-thich-me-khi-den-viet-nam%20phunutoday_vn.jpg" },
+      { "Id": "Cus456", "Name": "Kim jong Un", "Email": "unun@gmail.com", "Age": 38, "Image": "https://static01.nyt.com/images/2014/09/26/business/26nytnow-korea4/26nytnow-korea4-articleLarge.jpg?quality=75&auto=webp&disable=upscale" },
+      { "Id": "Cus789", "Name": "Putin", "Email": "putin@gmail.com", "Age": 77, "Image": "https://cafefcdn.com/203337114487263232/2021/6/5/5a0b376815e9f92a183ea4bd-16228592816581148499006.jpg" }
+    ]
+  },
+  {
+    "CustomerTypeId": 2,
+    "CustomterTypeName": "Normal",
+    "Customers": [
+      { "Id": "Cus000", "Name": "Hồ Cẩm Đào", "Email": "hodao@gmail.com", "Age": 16, "Image": "https://icdn.dantri.com.vn/Uploaded/2010/11/04/1.jpg" },
+      { "Id": "Cus111", "Name": "Tap Can Binh", "Email": "binhbinh@gmail.com", "Age": 67, "Image": "https://i.ex-cdn.com/danviet.vn/files/content/2026/09/23/tap-can-binh-0628.jpg" }
+    ]
+  }
+]

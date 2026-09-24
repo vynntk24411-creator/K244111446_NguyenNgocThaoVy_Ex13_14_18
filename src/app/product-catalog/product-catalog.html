@@ -1,0 +1,32 @@
+<table border="1" style="width:60%">
+  @for (cat of categories; track cat.Cateid) {
+    <tr>
+      <td>Ma Danh Muc</td>
+      <td>Ten Danh Muc</td>
+    </tr>
+    <tr>
+      <td>{{ cat.Cateid }}</td>
+      <td>{{ cat.CateName }}</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <table border="1" style="width:100%">
+          <tr>
+            <td>Ma San Pham</td>
+            <td>Ten San Pham</td>
+            <td>Gia San Pham</td>
+            <td>Picture</td>
+          </tr>
+          @for (p of cat.Products; track p.ProductId) {
+            <tr>
+              <td>{{ p.ProductId }}</td>
+              <td>{{ p.ProductName }}</td>
+              <td>{{ p.Price }}</td>
+              <td><img [src]="p.Image" width="60"></td>
+            </tr>
+          }
+        </table>
+      </td>
+    </tr>
+  }
+</table>

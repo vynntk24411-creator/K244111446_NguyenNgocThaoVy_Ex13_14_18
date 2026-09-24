@@ -1,0 +1,26 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th>Ma San Pham</th>
+      <th>Ten San Pham</th>
+      <th>Gia San Pham</th>
+      <th>Picture</th>
+      <th>#</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of products; track p.ProductId) {
+      <tr>
+        <td>{{ p.ProductId }}</td>
+        <td>{{ p.ProductName }}</td>
+        <td>{{ p.Price }}</td>
+        <td><img [src]="p.Image" width="80"></td>
+        <td>
+          <a style="cursor:pointer;" (click)="viewDetail(p)" title="Click here to view detail">Details</a>
+        </td>
+      </tr>
+    } @empty {
+      <tr><td colspan="5">No products available.</td></tr>
+    }
+  </tbody>
+</table>
